@@ -66,46 +66,29 @@ body{
 	width: 876px;
 	margin: 0 auto;
 	}
-@media(max-width:800px){
-    body{
-        width: 90%;
-    }
-    header{
-        flex-direction:column-reverse;
-        margin:20px;
-    }
-    button{
-    
-    }
-    .logo{
-        display:flex;
-        justify-content:center;
-    }
-    .code-snipet{
-        display:none;
-    }
-}
-@media(max-width:500px){
-}
 
 header{
-	Display:flex;
+	display:flex;
 	justify-content: space-between;
 	margin:10px 0;
 	align-items:center;
 
 }
 button{
-	border-radius:10px;
 	width:130px;
 	margin-top:20px;
 	padding:8px 0;
 	background:white;
 	border:1px solid black;
 }
+nav{
+	display:flex;
+	justify-content:space-between;
+	width:70%;
+}
 nav a{
 	color:gray;
-	margin-right:40px;
+	
 }
 section{
 	margin-top:40px;
@@ -118,7 +101,7 @@ ul{
 
 footer{
 	text-align:center;
-	margin:60px 0;
+	margin:20px 0;
 }
 .m-r-20{
 	margin-right:20px;
@@ -142,14 +125,19 @@ footer{
 .left-side{
 	display:flex;
 	flex-direction:column;
+	justify-content:center;
 	align-items:center;
-  }
+}
 .left-side h1{
 	font-size:70px;
 	text-align:center;
 }
 .left-side button{
 	font-size:15px;
+}
+.main-content{
+	border-top:2px solid black;
+	padding-top:5%;
 }
 		
 .aboveimgcontent {
@@ -159,10 +147,7 @@ footer{
 .middle-img{
 	padding:30px 0;
 }
-.belowimgcontent {
-	display:flex;
-	justify-content:space-between;
-}
+
 .services2{
 	border-bottom: 1px solid black;
 	padding-bottom:40px;
@@ -172,7 +157,12 @@ footer{
 	font-size: 25px;
 	
 }
-
+.belowimgcontent {
+	display:flex;
+	justify-content: space-between;
+	padding-bottom:30px;
+	border-bottom: 2px solid black;
+}
 .digital-ux{
 	border-top:1px solid black;
 }
@@ -182,6 +172,9 @@ footer{
 	border:1px solid black;
 	width:48%;
 	padding:20px;
+}
+.box2{
+	padding-right:10px;
 }
 .row1{
 	display:flex;
@@ -208,5 +201,68 @@ footer{
 	flex-direction: column;
 	width:50%;
 }
-
-
+@media(max-width:800px){
+    body{
+        width: 95%;
+    }
+    header{
+		flex-direction:column-reverse;
+		justify-content:center;
+		margin:20px;
+		width:95%;
+	}
+	nav{
+		width:95%;
+	}
+    .logo{
+        display:flex;
+		justify-content:center;
+		padding:5% 0;
+    }
+    .code-snipet{
+		display:none;
+	}
+	.middle-img{
+		width:100%;
+	}
+}
+@media(max-width:500px){
+	header{
+		flex-direction:column-reverse;
+		justify-content:space-around;
+		margin:20px 0;
+		width:100%;
+	}
+	nav{
+		width:100%;
+		display:flex;
+		flex-direction: column;
+		border-top:1px solid gray;
+	}
+	nav a{
+		padding:2% 0;
+		border-bottom:1px solid gray;
+		text-align:center;
+	}
+	.indexcontainer{
+		margin:0;
+	}
+	.aboveimgcontent{
+		flex-direction:column;
+		justify-content:space-between;
+	}
+	.middle-img{
+		width:100%;
+	}
+	.belowimgcontent{
+		flex-direction:column;
+	}
+	.box2{
+		padding-right:0;
+		padding:5% 0;
+	}
+	.box3{
+		padding:5% 0;
+	}
+	
+}
